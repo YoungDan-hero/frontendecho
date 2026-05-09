@@ -1,0 +1,42 @@
+{
+  "name": "frontendecho",
+  "version": "1.0.0",
+  "description": "Record and replay HTTP requests for frontend development. Save AI API costs and speed up development.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "frontend",
+    "http",
+    "record",
+    "replay",
+    "ai",
+    "cost-saving",
+    "development"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.6.2",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
